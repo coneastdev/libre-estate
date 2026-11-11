@@ -57,22 +57,22 @@
     </div>
     </nav>
     <div style="align-items: center; align-content: center; height: 90vh;">
-    <div class="container rounded-5 bg-secondary" style="width: 35%; padding: 1vw;">
-        <form>
+    <div class="container rounded-5 bg-secondary" style="width: 30%; padding: 1vw;">
+        <form action="/login" method="post">
         <div class="mb-3">
             <label for="exampleInputEmail1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
             <div id="emailHelp" class="form-text">We’ll never share your email with anyone else.</div>
         </div>
         <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
+            <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         </div>
-        <div class="mb-3 form-field">
-            <input type="checkbox" id="exampleCheck1" class="check">
-            <label for="exampleCheck1">Check me out</label>
+        <br />
+        <div style="width: 100%; text-align: center;">
+        <button type="submit" class="btn-solid theme-primary" style="width: 50%;">Login</button><br />
+        <a href="signup">Take me to sign up</a>
         </div>
-        <button type="submit" class="btn-solid theme-primary">Submit</button>
         </form>
     </div>
     </div>
